@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+	"name": "Udin Efendi",
+	"email": "udin@gmail.com",
+	"gender": "male"
+}
+
+###
+PATCH http://localhost:5000/users/3
+Content-Type: application/json
+
+{
+	"name": "Udin Efendi Teredit",
+	"email": "udin.edit@gmail.com",
+	"gender": "male"
+}
+
+###
+DELETE http://localhost:5000/users/4
