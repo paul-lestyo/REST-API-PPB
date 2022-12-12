@@ -4,9 +4,9 @@ const { db } = require('../config/Database.js')
 const {DataTypes} = Sequelize
 
 const User = db.define('users', {
-	name: DataTypes.STRING,
+	username: DataTypes.STRING,
 	email: DataTypes.STRING,
-	gender: DataTypes.STRING
+	password: DataTypes.STRING
 }, {
 	freezeTableName:true
 })
