@@ -14,7 +14,7 @@ AuthRoute.post(
 	controller.signup
 );
 
-AuthRoute.post("/api/auth/signin", controller.signin);
+AuthRoute.post("/signin", controller.signin);
 
 module.exports = {
 	AuthRoute
