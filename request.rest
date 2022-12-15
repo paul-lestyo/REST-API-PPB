@@ -2,8 +2,8 @@ POST http://localhost:5000/signup
 Content-Type: application/json
 
 {
-	"usernameee": "udineeeeee",
-	"email": "udineeeeee.edit@gmail.com",
+	"username": "udin",
+	"email": "udin.edit@gmail.com",
 	"password": "12345678"
 }
 
@@ -12,7 +12,7 @@ POST http://localhost:5000/signin
 Content-Type: application/json
 
 {
-	"username": "udineeeeee",
+	"username": "udin",
 	"password": "12345678"
 }
 
@@ -50,3 +50,36 @@ DELETE http://localhost:5000/users/4
 ###
 GET http://localhost:5000/categories
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiaWF0IjoxNjcwOTA1MjkyLCJleHAiOjE2NzA5OTE2OTJ9.ZETZoDLaN4tuSEWyafzvIO_knAmtboWZPMGdhqzG9Yc
+
+
+###
+GET http://localhost:5000/carts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
+
+
+###
+POST http://localhost:5000/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
+Content-Type: application/json
+
+{
+	"product_id": 1,
+	"quantity": 20
+}
+
+
+###
+PATCH  http://localhost:5000/cart/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
+Content-Type: application/json
+
+{
+	"product_id": 1,
+	"quantity": 120
+}
+
+
+###
+DELETE  http://localhost:5000/cart/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
+

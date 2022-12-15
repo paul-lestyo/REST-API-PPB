@@ -7,8 +7,6 @@ const User = db.define('users', {
 	username: DataTypes.STRING,
 	email: DataTypes.STRING,
 	password: DataTypes.STRING
-}, {
-	freezeTableName:true
 })
 
 module.exports = {

@@ -14,17 +14,11 @@ const Product = db.define('products', {
 	toko: DataTypes.STRING,
 	discount: DataTypes.STRING,
 	category_id: DataTypes.STRING
-}, {
-	freezeTableName:true
 })
 
-Product.associate = function(models) {
-	Product.belongsTo(Category, {
-		foreignKey: "category_id"
-	})
-}
-
-
+// Product.belongsTo(Category, {
+// 	foreignKey: "category_id"
+// })
 
 module.exports = {
 	Product
