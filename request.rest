@@ -1,4 +1,6 @@
-POST http://localhost:5000/signup
+# localhost:5000
+# ppb.paulus-lestyo.my.id
+POST http://ppb.paulus-lestyo.my.id/signup
 Content-Type: application/json
 
 {
@@ -8,7 +10,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:5000/signin
+POST http://ppb.paulus-lestyo.my.id/signin
 Content-Type: application/json
 
 {
@@ -17,13 +19,13 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:5000/users
+GET http://ppb.paulus-lestyo.my.id/users
 
 ###
-GET http://localhost:5000/users/1
+GET http://ppb.paulus-lestyo.my.id/users/1
 
 ###
-POST http://localhost:5000/users
+POST http://ppb.paulus-lestyo.my.id/users
 Content-Type: application/json
 
 {
@@ -33,7 +35,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:5000/users/3
+PATCH http://ppb.paulus-lestyo.my.id/users/3
 Content-Type: application/json
 
 {
@@ -43,22 +45,24 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5000/users/4
-
-
-
-###
-GET http://localhost:5000/categories
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiaWF0IjoxNjcwOTA1MjkyLCJleHAiOjE2NzA5OTE2OTJ9.ZETZoDLaN4tuSEWyafzvIO_knAmtboWZPMGdhqzG9Yc
+DELETE http://ppb.paulus-lestyo.my.id/users/4
 
 
 ###
-GET http://localhost:5000/carts
+GET http://localhost:5000/product
+
+###
+GET http://ppb.paulus-lestyo.my.id/categories
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTI0MzQ3LCJleHAiOjE2NzEyMTA3NDd9.MY1Y85bKOQTZbAtzpPfT0ULpMf_XwBH1t6kq-cpb9IE
+
+
+###
+GET http://ppb.paulus-lestyo.my.id/carts
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
 
 
 ###
-POST http://localhost:5000/cart
+POST http://ppb.paulus-lestyo.my.id/cart
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
 Content-Type: application/json
 
@@ -69,7 +73,7 @@ Content-Type: application/json
 
 
 ###
-PATCH  http://localhost:5000/cart/4
+PATCH  http://ppb.paulus-lestyo.my.id/cart/4
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
 Content-Type: application/json
 
@@ -80,6 +84,6 @@ Content-Type: application/json
 
 
 ###
-DELETE  http://localhost:5000/cart/4
+DELETE  http://ppb.paulus-lestyo.my.id/cart/4
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
 

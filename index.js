@@ -4,6 +4,7 @@ const { UserRoute } = require('./routers/UserRoute.js')
 const { CategoryRoute } = require('./routers/CategoryRoute.js')
 const { CartRoute } = require('./routers/CartRoute.js')
 const { AuthRoute } = require('./routers/AuthRoute.js')
+const { ProductRoute } = require('./routers/ProductRoute.js')
 
 const app = express()
 app.use(cors())
@@ -13,6 +14,7 @@ app.use(UserRoute)
 app.use(CategoryRoute)
 app.use(AuthRoute)
 app.use(CartRoute)
+app.use(ProductRoute)
 
 app.listen(5000, () => console.log('Server up and running....'))
 
