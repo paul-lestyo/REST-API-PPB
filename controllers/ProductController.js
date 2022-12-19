@@ -11,6 +11,12 @@ const geProducts = async(req, res) => {
 					name: {[Op.like]: `%${req.query.search}%`}
 				}
 			})
+		} else if(req.query.category_id != null) {
+			response = await Product.findAll({
+				where: {
+					category_id: req.query.category_id
+				}
+			})
 		} else {
 			response = await Product.findAll()
 		}
