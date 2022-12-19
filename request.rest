@@ -1,11 +1,10 @@
 # localhost:5000
 # ppb.paulus-lestyo.my.id
-POST http://ppb.paulus-lestyo.my.id/signup
+POST http://localhost:5000/signup
 Content-Type: application/json
 
 {
-	"username": "udin",
-	"email": "udin.edit@gmail.com",
+	"username": "udine",
 	"password": "12345678"
 }
 
@@ -49,7 +48,7 @@ DELETE http://ppb.paulus-lestyo.my.id/users/4
 
 
 ###
-GET http://localhost:5000/product
+GET http://ppb.paulus-lestyo.my.id/product
 
 ###
 GET http://ppb.paulus-lestyo.my.id/categories
@@ -58,12 +57,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxN
 
 ###
 GET http://ppb.paulus-lestyo.my.id/carts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxNDI3MTA3LCJleHAiOjE2NzE1MTM1MDd9.-KN2A6zFqPIZby4b08EdKhUIdieuSyMYLtkW-4_S9kY
 
 
 ###
 POST http://ppb.paulus-lestyo.my.id/cart
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxNDI3MTA3LCJleHAiOjE2NzE1MTM1MDd9.-KN2A6zFqPIZby4b08EdKhUIdieuSyMYLtkW-4_S9kY
 Content-Type: application/json
 
 {
@@ -74,7 +73,7 @@ Content-Type: application/json
 
 ###
 PATCH  http://ppb.paulus-lestyo.my.id/cart/4
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxNDI3MTA3LCJleHAiOjE2NzE1MTM1MDd9.-KN2A6zFqPIZby4b08EdKhUIdieuSyMYLtkW-4_S9kY
 Content-Type: application/json
 
 {
@@ -85,5 +84,5 @@ Content-Type: application/json
 
 ###
 DELETE  http://ppb.paulus-lestyo.my.id/cart/4
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxMTIwOTM2LCJleHAiOjE2NzEyMDczMzZ9.IXNqfxt87x4UHZpDLgGAdhy7S0V_DWyv8jS0y-Z0Sc8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjcxNDI3MTA3LCJleHAiOjE2NzE1MTM1MDd9.-KN2A6zFqPIZby4b08EdKhUIdieuSyMYLtkW-4_S9kY
 

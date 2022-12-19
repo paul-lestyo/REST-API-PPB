@@ -10,7 +10,6 @@ const AuthRoute = express.Router()
 AuthRoute.post(
 	"/signup",
 	body('username').notEmpty(),
-	body('email').isEmail(),
 	body('password').isLength({
 		min: 3
 	}),
